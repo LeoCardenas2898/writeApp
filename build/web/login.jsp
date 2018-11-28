@@ -65,13 +65,13 @@
                   firebase.auth().onAuthStateChanged(function(user) {
                     if (user) {
                       $(".sign-out").show();
-                                  $(".sign-out").text("Sign Out");
+                                $(".sign-out").text("Sign Out");
                                 alert(user.displayName+" with "+user.email);
                     } else {
                       // No user is signed in.
                       alert("No ha iniciado sesión");
                     }
-                });    
+                });
               }
             });
     // Google:
